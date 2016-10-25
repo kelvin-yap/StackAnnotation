@@ -20,8 +20,7 @@ import java.util.Vector;
 public class MyStringStack {
     private Vector<String> v = new Vector<String> ();
     public void push (String newElement) {
-    //    if (newElement != null) v.add (newElement);
-    	if(newElement != null) v.clear();
+        if (newElement != null) v.add (newElement);
     	
     }
 
@@ -37,7 +36,7 @@ public class MyStringStack {
     public String pop() throws NoSuchElementException {
     	//throw new NoSuchElementException();
     	String result = v.lastElement();
-    	v.remove(result);
+    //	v.remove(result);
     	System.out.println("hello");
     	return result;
 
